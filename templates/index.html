@@ -5,7 +5,7 @@
     <title>Title</title>
 </head>
 <body>
-<a href="{% url 'edit_page' %}">新文章</a>
+<a href="{% url 'edit_page' 0 %}">新文章</a>
 <br>
 {% for article in articles %}
 <a href="{% url 'article_page' article.id %}">{{ article.title }}</a><br>
